@@ -24,7 +24,7 @@
 
 
 
-const char* ssid="Kakashi";//SSID=service set identifier(basically name of wifi)
+const char* ssid="";//SSID=service set identifier(basically name of wifi) any wifi adress not specific
 const char* password="0987654321";//password of wifi
 
 
@@ -35,11 +35,12 @@ WiFiServer server(80);//Create a server that listen to incoming connections
 
 int current=0;
 int last=0;
+int data =0;
 
 void setup()
 {
   Serial.begin(115200);
-  delay(10);
+  delay(10);//important
 
  //Led instiallization
   pinMode(LED,OUTPUT);
@@ -176,4 +177,4 @@ void loop()
   Serial.println("");
 
     
-    }
+    }//done end
